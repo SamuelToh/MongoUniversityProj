@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Homework2_3.iml" filepath="$PROJECT_DIR$/Homework2_3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../week_2_crud.cedb8431bd5b/homework_2_4_mongoproc/create_blog_authors/create_blog_authors/M101J (1) (org.mongodb).iml" filepath="$PROJECT_DIR$/../../week_2_crud.cedb8431bd5b/homework_2_4_mongoproc/create_blog_authors/create_blog_authors/M101J (1) (org.mongodb).iml" />
+    </modules>
+  </component>
+</project>
