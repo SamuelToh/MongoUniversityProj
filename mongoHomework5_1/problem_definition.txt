@@ -1,0 +1,53 @@
+Week 5 assignment 1
+
+Problem definition:
+----------------------
+Given an archive of data for a blog web application
+Where users can post and comment on eachothers blog. (see sample document below for the structure)
+ Use the aggregation framework in mongoDB to find the most frequent author of comments on the blog web application.
+
+Archive file name: dataPackageWk5A1.json
+
+** To import data: > mongoimport -d test -c blog --drop dataPackageWk5A1.json
+
+Sample document:
+{
+       "_id" : ObjectId("5143ddf3bcf1bf4ab37d9c6e"),
+       "body" : "When in the Course of human events, it becomes necessary for one people to dissolve the political band",
+       "permalink" : "bjdgkubdbesvrgkvvelt",
+       "author" : "machine",
+       "title" : "Declaration of Independence",
+       "tags" : [
+               "swing",
+               "bed",
+               "approval",
+               "revolve",
+               "bathtub",
+               "limit",
+               "resolution",
+               "judo",
+               "crook",
+               "texture"
+       ],
+       "comments" : [
+               {
+                       "body" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inci
+unt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliq
+ ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat null
+ariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laboru
+
+                       "email" : "whwZHtDw@LbGOObNn.com",
+                       "author" : "Cassi Heal"
+               }
+               {
+                       "body" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inci
+unt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliq
+ ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat null
+ariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laboru
+
+                       "email" : "bMbdZghC@wQUDeCbE.com",
+                       "author" : "Barbera Lippman"
+               }
+       ],
+       "date" : ISODate("2013-03-16T02:50:27.877Z")
+}
