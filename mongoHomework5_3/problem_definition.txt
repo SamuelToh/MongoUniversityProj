@@ -1,0 +1,47 @@
+Week 5 assignment 3
+
+Problem definition:
+----------------------
+Given an archive of data containing a set of grades,
+Where each student (identified by student_id) can be a student of a variety of classes (identified by class_id)
+  And not every student in a class can have the same exact number of assessments. E.g. Some students may have 3 homework assignment while some can have only 1.
+ Use the aggregation framework in mongoDB to calculate the best average student performance class from the data.
+
+
+
+Archive file name: dataPackageWk5A3.json
+
+** To import data: > mongoimport -d test -c grades --drop dataPackageWk5A3.json
+
+Sample document:
+{
+	"_id" : ObjectId("50b59cd75bed76f46522c392"),
+	"student_id" : 10,
+	"class_id" : 5,
+	"scores" : [
+		{
+			"type" : "exam",
+			"score" : 69.17634380939022
+		},
+		{
+			"type" : "quiz",
+			"score" : 61.20182926719762
+		},
+		{
+			"type" : "homework",
+			"score" : 73.3293624199466
+		},
+		{
+			"type" : "homework",
+			"score" : 15.206314042622903
+		},
+		{
+			"type" : "homework",
+			"score" : 36.75297723087603
+		},
+		{
+			"type" : "homework",
+			"score" : 64.42913107330241
+		}
+	]
+}
