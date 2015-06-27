@@ -1,0 +1,24 @@
+Week 5 assignment 2
+
+Problem definition:
+----------------------
+Given an archive of data containing the population information on cities of California (abbreviation=CA) and New York (NY)
+ Use the aggregation framework in mongoDB to find the total average population of the large cities in CA and NY,
+Where the definition of large cities are cities with at least population of 25,000. 
+
+
+Archive file name: dataPackageWk5A2.json
+
+** To import data: > mongoimport -d test -c zips --drop dataPackageWk5A2.json
+
+Sample document:
+{
+        "_id" : "07840",
+        "city" : "HACKETTSTOWN",
+        "loc" : [
+                -74.834315,
+                40.852891
+        ],
+        "pop" : 23440,
+        "state" : "NJ"
+}
