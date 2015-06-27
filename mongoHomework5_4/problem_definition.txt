@@ -1,0 +1,12 @@
+Week 5 assignment 4
+
+Problem definition:
+----------------------
+Given an archive of data containing the population count for a list of cities in the united state.
+Use the aggregation framework in mongoDB to calculate the sum (total) of people living in a zip code.
+Where the city starts with a digit (e.g. 0-9). 
+
+
+Archive file name: dataPackage.json 
+
+** To import data: mongoimport -d test -c zips --drop dataPackage.json
