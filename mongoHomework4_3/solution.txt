@@ -1,0 +1,6 @@
+Add index to the following key(s):
+
+Index on key: Date
+Compound index on keys: (Tags, Date) 
+Index on key : permalink
+
