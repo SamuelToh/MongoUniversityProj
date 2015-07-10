@@ -1,0 +1,51 @@
+Week 5 assignment 1
+
+Problem definition:
+----------------------
+Given an archive of email messages.
+
+Add the email address "mrpotatohead@10gen.com" to the list of addresses 
+in the "headers.To" array for the document with "headers.Message-ID" 
+of "<8147308.1075851042335.JavaMail.evans@thyme>"
+
+
+Sample document:
+{
+        "_id" : ObjectId("4f16fd66d1e2d3237103ef9e"),
+        "body" : "Louise:\n\nDo you have any interest in attending this?  Buy and Kopper are scheduled to attend.  Wedne
+sday, 10:45 am.\n\n -----Original Message-----\nFrom: \t\"Michael Rushmore\" <michael.rushmore@loanx.com>@ENRON  \nSent:
+\tMonday, April 23, 2001 11:01 AM\nTo:\tFastow, Andrew S.\nCc:\tSunil Hirani; Dik Blewitt\nSubject:\tcreditex , LoanX, E
+nron Introductions\n\n\nHello Andy.\n\nIt's been a long time since we talked, but I trust that things are well with\nyou
+ and Lea.\n\nThe reason for my email is that my business partners Sunil Hirani and Dik\nBlewitt are going to be in Houst
+on visiting with Ken Lay at 10:30 A.M. on\nWednesday.  I think that you would find their business (trading credit risk)\
+nto be of interest, and I know they would like to meet you.\n\nWould you have any time on your calendar for lunch or for
+ an introduction\nduring the afternoon?\n\nBriefly,  Sunil is the co-founder of creditex, a the credit derivatives\ntrad
+ing platform that the market has adopted as the e-market for credit\nderivatives.  Dik is Chief Strategic Officer of cre
+ditex.\n\nMy relationship with Dik and Sunil comes from our shared interest in trading\nsyndicated loans.  creditex and
+I have co-founded LoanX, Inc., to do for the\nloan market what creditex has done for the credit derivatives market.\n\nS
+orry for the out-of-the blue email, but I look forward to catching up with\nyou in the future.\n\nI've copied Sunil and
+Dik to facilitate any schedule coordination that might\nbe possible.\n\nMy best to Lea.\n\nMike\nmichael.rushmore@loanx.
+com\n312-282-7777 (cell)\nLoanX, Inc.\n125 S. Wacker STE 1150\nChicago, IL 60606",
+        "filename" : "60.",
+        "headers" : {
+                "Content-Transfer-Encoding" : "7bit",
+                "Content-Type" : "text/plain; charset=us-ascii",
+                "Date" : ISODate("2001-04-24T20:38:00Z"),
+                "From" : "andrew.fastow@enron.com",
+                "Message-ID" : "<8350845.1075840847892.JavaMail.evans@thyme>",
+                "Mime-Version" : "1.0",
+                "Subject" : "FW: creditex , LoanX, Enron Introductions",
+                "To" : [
+                        "louise.kitchen@enron.com"
+                ],
+                "X-FileName" : "louise kitchen 2-7-02.pst",
+                "X-Folder" : "\\ExMerge - Kitchen, Louise\\'Americas\\Finance",
+                "X-From" : "Andrew S Fastow <Andrew S Fastow/ENRON@enronXgate@ENRON>",
+                "X-Origin" : "KITCHEN-L",
+                "X-To" : "Louise Kitchen <Louise Kitchen/HOU/ECT@ECT>",
+                "X-bcc" : "",
+                "X-cc" : ""
+        },
+        "mailbox" : "kitchen-l",
+        "subFolder" : "_americas/finance"
+}
