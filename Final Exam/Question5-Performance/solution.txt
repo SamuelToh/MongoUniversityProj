@@ -1,0 +1,13 @@
+Final exam Question 5 
+
+Problem definition:
+----------------------
+Given the following indexes.
+
+FINAL: QUESTION 5
+
+2) a_1_c_1
+3) a_1_b_1
+4) a_1_b_1_c_-1
+5) c_1
+

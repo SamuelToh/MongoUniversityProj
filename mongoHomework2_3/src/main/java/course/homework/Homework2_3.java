@@ -20,37 +20,21 @@ public class Homework2_3 {
 
     public static void main(String[] args) {
         try {
-            final MongoDatabase studentDatabase = dbClient.getDatabase("students");
-            final MongoCollection<Document> collection = studentDatabase.getCollection("grades");
+            MongoClient dbClient = new MongoClient();
+            MongoDatabase db = dbClient.getDatabase("test");
+            MongoCollection<Document> animals = db.getCollection("animals");
 
-            Bson queryFilter = Filters.eq("type", "homework");
-            Bson queryProjection = Projections.fields(Projections.include("student_id", "score", "type"), Projections.exclude("_id"));
-            Bson querySort = new Document("student_id",1).append("score", 1); //ascending order
+            Document animal = new Document("animal", "monkey");
 
-            List<Document> docs = collection.find(queryFilter).projection(queryProjection).sort(querySort).into(new ArrayList<Document>());
-
-            double prevDeletedId = -1.0, currStudentId = -1, currStudentScore = -1;
-
-            for (Document doc : docs) {
-                currStudentId = (Double) doc.get("student_id");
-                currStudentScore = (Double) doc.get("score");
-
-                if (currStudentId != prevDeletedId) {
-                    Bson delFilter = Filters.and(Filters.eq("student_id", currStudentId), Filters.eq("type", "homework"), Filters.eq("score", currStudentScore));
-                    collection.deleteOne(delFilter);
-                    System.out.println(" Removed row -> Student Id = " + currStudentId + ", score = " + currStudentScore + ", type= " + doc.get("type"));
-
-                    prevDeletedId = currStudentId;
-                }
-                else {
-                    System.out.println("Skip delete. Row -> Student Id = " + currStudentId + ", score = " + currStudentScore + ", type= " + doc.get("type"));
-                }
-            }
-        } catch(Exception e) {
-            System.out.println("Unexpected error => " + e.getMessage());
-        }
-        finally {
-            dbClient.close();
+            animals.insertOne(animal);
+            animal.remove("animal");
+            animal.append("animal", "cat");
+            animals.insertOne(animal);
+            animal.remove("animal");
+            animal.append("animal", "lion");
+            animals.insertOne(animal);
+        } catch (Exception e) {
+            System.out.println(e.toString());
         }
     }
 }
