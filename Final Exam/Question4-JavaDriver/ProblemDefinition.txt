@@ -1,0 +1,2 @@
+Given a Blog like web application 
+Enhancing the Blog to support viewers liking certain comments (Similar to what facebook has.)

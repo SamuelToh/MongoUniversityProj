@@ -1,0 +1,6 @@
+1) 1 Aniaml
+
+Why?
+------
+Only 1 animal will be inserted because the code will die on exception when attempting to do the 2nd insertOne.
+Duplication key exception.

@@ -1,0 +1,12 @@
+2) Remove all indexes from the collection, leaving only the index on _id in place
+
+Why?
+This is so that restructuring of indexes will not need to consider during insert. Probably recompile
+the index when all inserts are done.
+
+4) Set w=0, j=0 on writes
+
+Why?
+This is so that the program doesn't wait for the acknowledgement of write from the primary mongo instance.
+And it also doesn't care whether the journal has been updated or not. Thus increasing insert performance,
+however you run the danger of data lost on situation when the primary instance goes down.
